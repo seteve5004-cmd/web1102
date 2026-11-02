@@ -15,7 +15,7 @@
     </script>
 
     <script>
-         function drawImage()
+         function drawImage1()
         {
             let sel = document.getElementById('food'); //선택리스트 id
             let img = document.getElementById('cimg');  // 이미지를 바꿀이미지 태그 id
@@ -37,7 +37,7 @@
     </form> <br><hr><br>
     주제2. 오늘 점심 메뉴 선택 <br>
     <form>
-      <select id='food' onchange='drawImage()'>
+      <select id='food' onchange='drawImage1()'>
         <option value='pizza.png'> 피자 </option>
          <option value='chicken.png' selected> 치킨 </option>
          <option value='rice.png'> 밥 </option>
@@ -46,7 +46,17 @@
           
       </select>
       <img id = 'cimg' src = 'chicken.png' alt='설명문' width=100 height=100>
-    </form>
+    </form>  <br><hr><br>
+
+      주제3. 20대 버킷리스트 <br>
+    <form>
+      <select id='list' onchange='drawImage()'>
+        <option value='journey.png'>  여행 </option>
+         <option value='skydiving.png'> 스카이다이빙 </option>
+         <option value='orange.png'>  </option>
+      </select>
+      <img id = 'limg' src = 'strawberry.png' alt='설명문' width=100 height=100>
+    </form> 
     
   </center>
     
