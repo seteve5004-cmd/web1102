@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>page3</title>
+
+<script>
+    function whatkeydown(e) 
+    {
+        let str = ""; let div = document.getElementById("div");
+        div.innerHTML = "";
+        str +="e.key = " + e.key + "<br>";
+          str +="e.code = " + e.code + "<br>";
+          div.innerHTML = str;
+
+    }
+</script>
+
+
+
+
 </head>
 <body>
+    <center>
+        키 리스너와 키 이벤트 속성 출력하기 <br>
+        <hr>
+        텍스트 창에 키를 눌러 보세요. Alt, Shift, Ctrl 키도 가능 <br>
+        <input type = "text" id = "text" onkeydown="whatkeydown(event)">
+        <div id="div" style="background-color: aquamarine;
+        width: 250px; height: auto;"></div>"
+    </center>
     
 </body>
 </html>
