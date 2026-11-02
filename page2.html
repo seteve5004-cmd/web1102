@@ -10,6 +10,14 @@
             let sel = document.getElementById('fruits'); //선택리스트 id
             let img = document.getElementById('fimg');  // 이미지를 바꿀이미지 태그 id
             img.src = sel.options[sel.selectedIndex].value; // 선택한 리스트의 위치의 값으로 img 태그의 src 속성을 변경해라
+
+        }
+
+         function drawImage()
+        {
+            let sel = document.getElementById('food'); //선택리스트 id
+            let img = document.getElementById('cimg');  // 이미지를 바꿀이미지 태그 id
+            img.src = sel.options[sel.selectedIndex].value; // 선택한 리스트의 위치의 값으로 img 태그의 src 속성을 변경해라
             
         }
     </script>
@@ -32,7 +40,7 @@
          <option value='chiken.png' selected> 치킨 </option>
          <option value='rice.png'> 밥 </option>
       </select>
-      <img id = 'fimg' src = 'strawberry.png' alt='설명문' width=100 height=100>
+      <img id = 'cimg' src = 'strawberry.png' alt='설명문' width=100 height=100>
     </form>
     
   </center>
