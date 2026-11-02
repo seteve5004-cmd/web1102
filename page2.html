@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>리스트에서 자료 선택하기</title>
+    <script>
+        function drawImage()
+        {
+            let sel = document.getElementById('fruits'); //선택리스트 id
+            let img = document.getElementById('fimg');  // 이미지를 바꿀이미지 태그 id
+            img.src = set.options[sel.selectedIndex].value; // 선택한 리스트의 위치의 값으로 img 태그의 src 속성을 변경해라
+            
+        }
+    </script>
 </head>
 <body>
   <center> 
@@ -19,9 +28,9 @@
     주제2. 오늘 점심 메뉴 선택 <br>
     <form>
       <select id='food' onchange='drawImage()'>
-        <option value='apple.png'> 사과 </option>
-         <option value='strawberry.png' selected> 딸기 </option>
-         <option value='orange.png'> 오렌지 </option>
+        <option value='pizza.png'> 피자 </option>
+         <option value='chiken.png' selected> 치킨 </option>
+         <option value='rice.png'> 밥 </option>
       </select>
       <img id = 'fimg' src = 'strawberry.png' alt='설명문' width=100 height=100>
     </form>
